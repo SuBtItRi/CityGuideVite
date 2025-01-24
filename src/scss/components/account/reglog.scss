@@ -1,0 +1,17 @@
+@use '../../mixins' as *;
+
+.reglog {
+  @include center;
+  height: 100vh;
+  &__wrap {
+    @include center;
+    margin-top: 50px;
+    flex-direction: column;
+    width: 350px;
+    height: 350px;
+    background: #000;
+    border-radius: 25px;
+    padding: 20px;
+    color: #fff;
+  }
+}

@@ -1,0 +1,5 @@
+export { default as Main } from './Main2'
+export { default as Header } from './Header'
+export { default as Footer } from './Footer/Footer'
+export { default as Loader } from './Loader'
+export { default as SubscribeModal } from './SubscribeModal'

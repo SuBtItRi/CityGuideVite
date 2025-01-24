@@ -1,0 +1,95 @@
+@use '../../mixins' as *;
+
+.main {
+  @include center;
+  background: url('../img/main0.jpeg') no-repeat;
+  background-size: 100%;
+  background-color: #000;
+  object-fit: cover;
+  color: #fff;
+  font-size: 60px;
+  @media (max-width: 1024px) {
+    font-size: 30px;
+  }
+  @media (max-width: 600px) {
+    font-size: 10px;
+  }
+  &__wrap {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  &__subtitle {
+    position: absolute;
+    margin: auto;
+    font-family: Great Vibes;
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-size: 40px;
+    opacity: 0.5;
+    font-size: 60px;
+    margin-top: -20px;
+    margin-left: 250px;
+    animation: ms 1.5s ease 0s 1 reverse both;
+    @media (max-width: 1024px) {
+      font-size: 30px;
+      margin-left: 100px;
+    }
+    @media (max-width: 600px) {
+      font-size: 15px;
+      margin-left: 25px;
+      margin-top: -10px;
+    }
+  }
+  @keyframes ms {
+    0% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  &__title {
+    margin: 20% 0;
+    animation: mt 1.25s ease 0s 1 reverse both;
+    &_text {
+      font-family: Unbounded;
+    }
+  }
+  @keyframes mt {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  &__btn {
+    &_back {
+      @include btn;
+      top: 310px;
+      left: 0px;
+      font-size: 40px;
+      @media (max-width: 1024px) {
+        font-size: 30px;
+      }
+      @media (max-width: 600px) {
+        font-size: 20px;
+      }
+    }
+    &_next {
+      @include btn;
+      top: 310px;
+      right: 0px;
+      font-size: 40px;
+      @media (max-width: 1024px) {
+        font-size: 30px;
+      }
+      @media (max-width: 600px) {
+        font-size: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@use '../mixins' as *;
+
+.subscribe-window {
+  margin: 15% auto;
+  padding: 20px;
+  border: none;
+  width: 400px;
+  height: 160px;
+  background-color: #b9b9b9;
+  border-radius: 25px;
+  text-align: center;
+  font-family: Unbounded;
+  &__wrap {
+    background-color: #0000009f;
+  }
+  & button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-family: Unbounded;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: black;
+    color: #fff;
+    transition: 0.5s;
+    &:hover {
+      background-color: red;
+    }
+  }
+  &__wrap {
+    z-index: 100;
+    position: fixed;
+    @include center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

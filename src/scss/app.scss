@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+
+// p: Caveat | h: Great Vibes / Unbounded
+// base: LXGW WenKai Mono TC
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Unbounded;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.overflow-h {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: flex;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+  &__item {
+    &-label {
+      margin-top: 10px;
+      font-size: 12px;
+      color: #ccc;
+    }
+    &-inp {
+      margin-top: 5px;
+      padding: 5px;
+      border-radius: 15px;
+      outline: none;
+      border: none;
+      font-family: Unbounded;
+      &::placeholder {
+        display: flex;
+        align-self: center;
+        font-family: Unbounded;
+      }
+    }
+  }
+  &__btn {
+    margin-top: 20px;
+    border: none;
+    padding: 5px;
+    border-radius: 15px;
+    font-family: Unbounded;
+    font-size: 14px;
+    transition: 0.5s;
+    background: #fff;
+    &:hover {
+      background: red;
+    }
+    color: #000;
+    cursor: pointer;
+  }
+  .allright {
+    color: green;
+    display: none;
+    font-size: 14px;
+  }
+  .exist {
+    color: red;
+    display: none;
+    font-size: 14px;
+  }
+  #haveAccount {
+    margin-top: 20px;
+    font-size: 14px;
+    color: darkgreen;
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover {
+      color: green;
+    }
+  }
+  #notHaveAccount {
+    margin-top: 20px;
+    font-size: 14px;
+    color: darkred;
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover {
+      color: red;
+    }
+  }
+}

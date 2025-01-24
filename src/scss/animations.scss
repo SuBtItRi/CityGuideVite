@@ -1,0 +1,12 @@
+.apear {
+  &-right {
+    transition: 1.5s;
+    opacity: 0;
+    transform: translateX(500px);
+  }
+  &-left {
+    transition: 1.5s;
+    opacity: 0;
+    transform: translateX(-500px);
+  }
+}

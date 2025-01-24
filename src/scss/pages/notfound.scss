@@ -1,0 +1,25 @@
+@use '../mixins' as *;
+
+.notfound {
+  background-color: #f5f5f5;
+  @include center;
+  height: 80vh;
+  width: 100vw;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 50px;
+  }
+  &__left-block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 500px;
+  }
+  &__right-block {
+    & img {
+      width: 400px;
+    }
+  }
+}

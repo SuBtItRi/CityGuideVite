@@ -1,0 +1,7 @@
+export { default as Home } from './Home'
+export { default as Catalog } from './Catalog'
+export { default as Contacts } from './Contacts'
+export { default as Landmark } from './Landmark'
+export { default as Reglog } from './Reglog'
+export { default as AccountSettings } from './AccountSettings'
+export { default as NotFound } from './NotFound'

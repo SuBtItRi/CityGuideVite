@@ -1,0 +1,57 @@
+@use '../../mixins' as *;
+
+.advice {
+  position: relative;
+  @include center;
+  &__wrap {
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    max-width: 1600px;
+  }
+  &__img {
+    position: absolute;
+    width: 40%;
+    max-width: 600px;
+    z-index: -1;
+    transition: 1.5s;
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+  &__text {
+    background-color: #c4eeec;
+    margin-left: 35%;
+    height: 30%;
+    width: 100%;
+    padding: 9.5% 5% 9.5% 5%;
+    transition: 1.5s;
+    @media (max-width: 1024px) {
+      margin-left: 0;
+    }
+    &_box {
+      border-left: 3.5px solid #000;
+      padding: 25px 0 15px 10%;
+      background: url('../img/quotes.png') no-repeat;
+      background-size: 15px;
+      background-position: top 7.5px left 5%;
+    }
+    &_title {
+      font-size: 22px;
+      font-weight: 700;
+      font-family: Unbounded;
+      @media (max-width: 1024px) {
+        font-size: 16px;
+      }
+    }
+    &_subtitle {
+      padding-top: 20px;
+      font-size: 16px;
+      font-style: italic;
+      color: rgb(87, 87, 87);
+      @media (max-width: 1024px) {
+        font-size: 12px;
+      }
+    }
+  }
+}

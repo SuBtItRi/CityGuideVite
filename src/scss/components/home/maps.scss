@@ -1,0 +1,25 @@
+.maps {
+  margin-bottom: 100px;
+  &__title {
+    display: flex;
+    margin: 20px;
+    max-width: 100%;
+    transition: 1.5s;
+    & h2 {
+      font-family: Unbounded;
+      @media (max-width: 1024px) {
+        font-size: 20px;
+      }
+    }
+    & select {
+      margin-left: 15px;
+      font-family: Unbounded;
+      font-size: 16px;
+      border: none;
+      outline: 0;
+      @media (max-width: 600px) {
+        width: 100%;
+      }
+    }
+  }
+}
